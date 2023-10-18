@@ -1,3 +1,6 @@
+import Caminhao from "./Caminhao";
+import Carro from "./Carro";
+import Moto from "./Moto";
 import Veiculo from "./Veiculo"
 
 class Frota {
@@ -5,18 +8,13 @@ class Frota {
 
   constructor() { }
 
-  public get numeroRodas(): number {
-    let rodas = 0;
-    for (const v of this.veiculos) {
-      if (v.getTipo() === "carro") {
-        rodas += 4;
-      } else if (v.getTipo() === "moto") {
-        rodas += 2;
-      } else if (v.getTipo() === "caminhão") {
-        rodas += 8;
-      }
-    }
-    return rodas;
+  public createVeiculo(v:string): Veiculo {
+      if (v === "carro") {
+        return new Carro("carro")
+      } else if (v === "moto") {
+        return new Moto("moto")
+      } 
+        return new Caminhao("caminhão")
   }
 
   public adicionarVeiculo(v: Veiculo) {
