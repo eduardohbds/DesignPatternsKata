@@ -1,14 +1,13 @@
-export default class Veiculo {
-  tipo: string;
+export default abstract class Veiculo {
   chassi: string;
+  rodas = 0;
 
-  constructor(chassi: string, tipo: string) {
+  constructor(chassi: string) {
     this.chassi = chassi;
-    this.tipo = tipo;
   }
 
-  getTipo(): string {
-    return this.tipo;
+  getRodas(): number {
+    return this.rodas;
   }
 }
 
