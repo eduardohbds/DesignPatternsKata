@@ -1,6 +1,0 @@
-A empresa de entregas tem uma frota diversificada composta de carros, motos e caminhões. Veículos só podem ser adicionados ou removidos da frota por um gerente. 
-Um gerente deseja realizar a troca de todos os pneus dos veículos dessa frota e para isso precisa saber quantos comprar (assuma que os pneus são todos do mesmo tamanho e tipo).
-
-Considerando o código disponível na pasta “frota”:
-- Levando em consideração o padrão criador e a separação de responsabilidades, refatore o código na funcionalidade que adiciona veículo na frota.
-- Levando em consideração os conceitos de polimorfismo e herança, refatore o código na funcionalidade que calcula a quantidade de rodas da frota.
