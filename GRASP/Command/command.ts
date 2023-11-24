@@ -1,3 +1,5 @@
+
+
 class Portao {
   // Receiver
   public static readonly ABERTO = 0;
