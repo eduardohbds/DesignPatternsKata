@@ -9,5 +9,9 @@ export default abstract class Veiculo {
   getRodas(): number {
     return this.rodas;
   }
+
+  toString(): string {
+    return `Chassi:${this.chassi} Rodas:${this.rodas}`
+  }
 }
 
